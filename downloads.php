@@ -69,7 +69,7 @@
 									<li class="active"><a href="courses.html">Courses</a></li>
 									<li><a href="blog.html">Blog</a></li>
 									<li><a href="#">Page</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="contact.php">Contact</a></li>
 								</ul>
 								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
 
@@ -124,7 +124,7 @@
 				<li class="menu_mm"><a href="#">Courses</a></li>
 				<li class="menu_mm"><a href="#">Blog</a></li>
 				<li class="menu_mm"><a href="#">Page</a></li>
-				<li class="menu_mm"><a href="contact.html">Contact</a></li>
+				<li class="menu_mm"><a href="contact.php">Contact</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -278,7 +278,7 @@
 										<ul>
 											<li><a href="index.html">Home</a></li>
 											<li><a href="about.html">About</a></li>
-											<li><a href="contact.html">Contact</a></li>
+											<li><a href="contact.php">Contact</a></li>
 											<li><a href="#">Features</a></li>
 											<li><a href="courses.html">Courses</a></li>
 											<li><a href="#">Events</a></li>
