@@ -61,9 +61,8 @@
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
-									<li><a href="#">Staff Login</a></li>
 									<li><a href="downloads.php">Downloads</a></li>
-									<li><a href="mcq.php">MCQ</a></li>
+									<li class="active"><a href="login.php">Staff Login</a></li>
 								</ul>
 							</nav>
 
@@ -89,8 +88,9 @@
 		</div>
 		<nav class="menu_nav">
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="index.html">Home</a></li>
-				<li class="menu_mm"><a href="#">Staff Login</a></li>
+				<li class="menu_mm"><a href="index.php">Home</a></li>
+				<li class="menu_mm"><a href="downloads.php">Home</a></li>
+				<li class="menu_mm"><a href="login.php">Staff Login</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -105,7 +105,7 @@
 						<div class="breadcrumbs">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li>Contact</li>
+								<li>Login</li>
 							</ul>
 						</div>
 					</div>

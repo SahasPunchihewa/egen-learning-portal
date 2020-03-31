@@ -62,7 +62,8 @@
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
 									<li><a href="downloads.php">Downloads</a></li>
-									<li><a href="#">MCQ</a></li>
+									<li class="active"><a href="mcq.php">MCQ</a></li>
+									<li><a href="login.php">Staff Login</a></li>
 								</ul>
 							</nav>
 
@@ -90,7 +91,8 @@
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.php">Home</a></li>
 				<li class="menu_mm"><a href="downloads.php">Downloads</a></li>
-				<li class="menu_mm"><a href="#">MCQ</a></li>
+				<li class="menu_mm"><a href="mcq.php">MCQ</a></li>
+				<li class="menu_mm"><a href="login.php">Staff Login</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -104,7 +106,8 @@
 					<div class="col">
 						<div class="breadcrumbs">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.php">Home</a></li>
+								<li><a href="downloads.php">Downloads</a></li>
 								<li>MCQ</li>
 							</ul>
 						</div>

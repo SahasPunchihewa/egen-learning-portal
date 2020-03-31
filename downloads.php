@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Courses</title>
+<title>Downloads</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
@@ -64,20 +64,10 @@
 							</div>
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="about.html">About</a></li>
-									<li class="active"><a href="courses.html">Courses</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="#">Page</a></li>
-									<li><a href="contact.php">Contact</a></li>
+									<li><a href="index.php">Home</a></li>
+									<li class="active"><a href="downloads.php">Downloads</a></li>
+									<li><a href="contact.php">Staff Login</a></li>
 								</ul>
-								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
-
-								<!-- Hamburger -->
-
-								<div class="hamburger menu_mm">
-									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
-								</div>
 							</nav>
 
 						</div>
@@ -85,24 +75,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- Header Search Panel -->
-		<div class="header_search_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="header_search_content d-flex flex-row align-items-center justify-content-end">
-							<form action="#" class="header_search_form">
-								<input type="search" class="search_input" placeholder="Search" required="required">
-								<button class="header_search_button d-flex flex-column align-items-center justify-content-center">
-									<i class="fa fa-search" aria-hidden="true"></i>
-								</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>			
 	</header>
 
 	<!-- Menu -->
@@ -120,11 +92,8 @@
 		<nav class="menu_nav">
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.html">Home</a></li>
-				<li class="menu_mm"><a href="#">About</a></li>
-				<li class="menu_mm"><a href="#">Courses</a></li>
-				<li class="menu_mm"><a href="#">Blog</a></li>
-				<li class="menu_mm"><a href="#">Page</a></li>
-				<li class="menu_mm"><a href="contact.php">Contact</a></li>
+				<li class="menu_mm"><a href="downloads.php">Downloads</a></li>
+				<li class="menu_mm"><a href="contact.php">Staff Login</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -139,7 +108,7 @@
 						<div class="breadcrumbs">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li>Courses</li>
+								<li>Downloads</li>
 							</ul>
 						</div>
 					</div>
@@ -158,14 +127,13 @@
 				<div class="col-lg-8">
 					<div class="courses_search_container">
 						<form action="#" id="courses_search_form" class="courses_search_form d-flex flex-row align-items-center justify-content-start">
-							<input type="search" class="courses_search_input" placeholder="Search Courses" required="required">
 							<select id="courses_search_select" class="courses_search_select courses_search_input">
 								<option>All Categories</option>
 								<option>Videos</option>
 								<option>Tutorials</option>
 								<option>Papers</option>
 							</select>
-							<button action="submit" class="courses_search_button ml-auto">search now</button>
+							<button action="submit" class="courses_search_button ml-auto">Submit</button>
 						</form>
 					</div>
 					<div class="courses_container">
@@ -178,10 +146,8 @@
 									<div class="course_body">
 										<h3 class="course_title">Software Training</h3>
 									</div>
-									<div class="course_footer">
-										<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
-											<a href="">Download</a>
-										</div>
+									<div class="courses_button trans_200">
+										<a href="">Download</a>
 									</div>
 								</div>
 							</div>
