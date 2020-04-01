@@ -1069,7 +1069,7 @@ section
 	position: relative;
 	width: 100%;
 	background: #1e2434;
-	padding-top: 94px;
+	padding-top: 25px;
 }
 .footer_background
 {
@@ -1084,7 +1084,7 @@ section
 }
 .footer_content
 {
-	padding-bottom: 53px;
+	padding-bottom: 10px;
 }
 .footer_logo_text
 {
@@ -1265,5 +1265,5 @@ section
 }
 .cr_list li a:hover
 {
-	color: #0064FF;
+	color: #003588;
 }

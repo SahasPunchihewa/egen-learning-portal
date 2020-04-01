@@ -174,10 +174,9 @@
 								<div class="footer_section footer_about">
 									<div class="footer_logo_container">
 										<a href="#">
-											<div class="footer_logo_text">E<span>gen</span></div>
+										<div class="footer_logo_text">E<span>GEN</span></div>
 										</a>
-									</div>
-									<div>&nbsp;</div>
+									</div>	
 									<div class="cr_text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</div>
 								</div>
 							</div>
