@@ -31,11 +31,16 @@ if (isset($_SESSION['auth'])){
 						<div class="col">
 							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
 								<ul class="top_bar_contact_list">
-									<li><div class="question"></div></li> <!-- Notice-->
+									<li><div class="question">Have any questions?</div></li>
+									<li>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<div>+94 77 901 6551</div>
+									</li>
+									<li>
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<div>info.deercreative@gmail.com</div>
+									</li>
 								</ul>
-								<div class="top_bar_login ml-auto">
-									
-								</div>
 							</div>
 						</div>
 					</div>
@@ -51,7 +56,7 @@ if (isset($_SESSION['auth'])){
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text">E<span>gen</span></div>
+									<div class="logo_text"><img src="images/icon.png"/>&ensp;FOR NEXT GENERATION</div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">

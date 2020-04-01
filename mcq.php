@@ -30,16 +30,13 @@
 									<li><div class="question">Have any questions?</div></li>
 									<li>
 										<i class="fa fa-phone" aria-hidden="true"></i>
-										<div>001-1234-88888</div>
+										<div>+94 77 901 6551</div>
 									</li>
 									<li>
 										<i class="fa fa-envelope-o" aria-hidden="true"></i>
 										<div>info.deercreative@gmail.com</div>
 									</li>
 								</ul>
-								<div class="top_bar_login ml-auto">
-									<div class="login_button"><a href="#">Register or Login</a></div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -55,7 +52,7 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text">E<span>gen</span></div>
+									<div class="logo_text"><img src="images/icon.png"/>&ensp;FOR NEXT GENERATION</div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
