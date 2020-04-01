@@ -1,7 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION['auth'])){
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -212,7 +208,7 @@ if (isset($_SESSION['auth'])){
 		</div>
 	</footer>
 </div>
-
+	
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
@@ -223,8 +219,3 @@ if (isset($_SESSION['auth'])){
 <script src="js/contact.js"></script>
 </body>
 </html>
-<?php
-}else{
-	header('Location: '."login.php");
-}
-?>

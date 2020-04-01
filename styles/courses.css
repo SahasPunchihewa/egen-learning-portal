@@ -127,7 +127,7 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-weight: 700;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -268,7 +268,7 @@ section
 .top_bar
 {
 	width: 100%;
-	background: #14bdee;
+	background: #0064FF;
 }
 .header.scrolled .top_bar
 {
@@ -290,7 +290,7 @@ section
 }
 .question
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 14px;
 	color: #FFFFFF;
 	margin-left: 0px;
@@ -378,9 +378,9 @@ section
 }
 .logo_text
 {
-	font-family: 'Roboto Slab', serif;
-	font-size: 36px;
-	font-weight: 700;
+	font-family: "Ebrima";
+	font-size: 25px;
+	font-weight: 500;
 	line-height: 0.75;
 	color: #384158;
 	vertical-align: middle;
@@ -393,7 +393,7 @@ section
 }
 .logo_text span
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 .header.scrolled .logo
 {
@@ -442,7 +442,7 @@ section
 .main_nav li a:hover,
 .main_nav li.active a
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 .main_nav li.active::after
 {
@@ -452,7 +452,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background: #14bdee;
+	background: #0064FF;
 	content: '';
 }
 .search_button
@@ -479,7 +479,7 @@ section
 .search_button:hover i,
 .shopping_cart:hover i
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 .header_search_form
 {
@@ -493,7 +493,7 @@ section
 	bottom: 0px;
 	left: 0px;
 	width: 100%;
-	background: #14bdee;
+	background: #0064FF;
 	z-index: -1;
 	opacity: 0;
 	-webkit-transition: all 400ms ease;
@@ -557,7 +557,7 @@ section
 }
 .hamburger:hover i
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 
 /*********************************
@@ -655,7 +655,7 @@ section
 }
 .menu_nav ul li a:hover
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 .menu .search
 {
@@ -801,7 +801,7 @@ section
 }
 .breadcrumbs ul li a:hover
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 
 /*********************************
@@ -816,18 +816,18 @@ section
 }
 .courses_search_container
 {
-	padding-left: 20px;
-	padding-right: 20px;
-	background: #f2f4f5;
+	
+	padding-left: 45%;
+	padding-right: 50%;
 }
 .courses_search_form
 {
-	width: 100%;
+	width: 450px;
 	height: 92px;
 }
 .courses_search_input
 {
-	width: 240px;
+	width: 250px;
 	height: 46px;
 	border: solid 1px #d9d9d9;
 	border-radius: 3px;
@@ -836,7 +836,7 @@ section
 }
 .courses_search_input:focus
 {
-	outline: solid 1px #14bdee;
+	outline: solid 1px #0064FF;
 }
 .courses_search_form > input
 {
@@ -861,7 +861,7 @@ section
 {
 	width: 161px;
 	height: 46px;
-	background: #14bdee;
+	background: #0064FF;
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
@@ -914,11 +914,11 @@ section
 }
 .course_title
 {
-
+	text-align: center;
 }
 .course_title a
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 20px;
 	color: #384158;
 	-webkit-transition: all 200ms ease;
@@ -929,7 +929,7 @@ section
 }
 .course_title a:hover
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 .course_teacher
 {
@@ -971,14 +971,14 @@ section
 }
 .course_price
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 20px;
 	font-weight: 700;
-	color: #14bdee;
+	color: #0064FF;
 }
 .course_price span
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 14px;
 	font-weight: 400;
 	text-decoration: line-through;
@@ -990,10 +990,10 @@ section
 	width: 210px;
 	height: 46px;
 	border-radius: 3px;
-	background: #14bdee;
+	background: #0064FF;
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 41px;
+	margin-top: 20px;
 	box-shadow: 0px 5px 40px rgba(29,34,47,0.15);
 }
 .courses_button:hover
@@ -1038,7 +1038,7 @@ section
 .pagination_list li:hover,
 .pagination_list li.active
 {
-	background: #14bdee;
+	background: #0064FF;
 }
 .pagination_list li a
 {
@@ -1126,7 +1126,7 @@ section
 }
 .sidebar_section_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 24px;
 	font-weight: 700;
 	color: #384158;
@@ -1175,7 +1175,7 @@ section
 .sidebar_categories ul li:hover a,
 .sidebar_categories ul li:hover a::before
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 .sidebar_latest
 {
@@ -1203,7 +1203,7 @@ section
 }
 .latest_title a
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 16px;
 	font-weight: 700;
 	color: #383749;
@@ -1216,14 +1216,14 @@ section
 }
 .latest_title a:hover
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 .latest_price
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 14px;
 	font-weight: 700;
-	color: #14bdee;
+	color: #0064FF;
 	line-height: 0.75;
 	margin-top: 16px;
 }
@@ -1294,7 +1294,7 @@ section
 }
 .tags_list li:hover
 {
-	background: #14bdee;
+	background: #0064FF;
 }
 .tags_list li:hover a
 {
@@ -1336,12 +1336,12 @@ section
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #14bdee;
+	background: #0064FF;
 	opacity: 0.7;
 }
 .banner_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 20px;
 	font-weight: 700;
 	color: #FFFFFF;
@@ -1362,7 +1362,7 @@ section
 .banner_button a
 {
 	display: block;
-	color: #14bdee;
+	color: #0064FF;
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: 0.1em;
@@ -1378,7 +1378,7 @@ section
 }
 .banner_button:hover
 {
-	background: #14bdee;
+	background: #0064FF;
 }
 .banner_button:hover a
 {
@@ -1408,7 +1408,7 @@ section
 }
 .newsletter_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1485,7 +1485,7 @@ section
 	cursor: pointer;
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #14bdee;
+	color: #0064FF;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 }
@@ -1519,7 +1519,7 @@ section
 }
 .footer_logo_text
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 0.75;
@@ -1532,11 +1532,11 @@ section
 }
 .footer_logo_text span
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 .footer_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Montserrat";
 	font-size: 18px;
 	font-weight: 700;
 	color: #FFFFFF;
@@ -1588,7 +1588,7 @@ section
 }
 .footer_social ul li:hover
 {
-	background: #14bdee;
+	background: #0064FF;
 }
 .footer_contact
 {
@@ -1638,7 +1638,7 @@ section
 }
 .footer_links_container ul li a:hover
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 .footer_mobile
 {
@@ -1678,7 +1678,7 @@ section
 }
 .cr_text a:hover
 {
-	color: #14bdee;
+	color: #0064FF;
 }
 .cr_list li:not(:last-child)
 {
@@ -1696,5 +1696,5 @@ section
 }
 .cr_list li a:hover
 {
-	color: #14bdee;
+	color: #0064FF;
 }

@@ -142,39 +142,20 @@
 									<div class="course_image"><img src="images/course_4.jpg" alt=""></div>
 									<div class="course_body">
 										<h3 class="course_title">Software Training</h3>
-									</div>
-									<div class="courses_button trans_200">
+										<div class="courses_button trans_200">
 										<a href="">Download</a>
 									</div>
+									<div class="courses_button trans_200">
+										<a href="mcq.php">Answer</a>
+									</div>
+									<div class="courses_button trans_200">
+										<a href="">Delete</a>
+									</div>
+									</div>
+									
 								</div>
 							</div>
-
-	
-						</div>
-						
-								
-						
-					</div>
-				</div>
-
-				<!-- Courses Sidebar -->
-				<div class="col-lg-4">
-					<div class="sidebar">
-
-						<!-- Categories -->
-						<div class="sidebar_section">
-							<div class="sidebar_section_title">Categories</div>
-							<div class="sidebar_categories">
-								<ul>
-									<li><a href="#">Videos</a></li>
-									<li><a href="#">Tutorials</a></li>
-									<li><a href="#">Papers</a></li>
-								</ul>
-							</div>
-						</div>
-
-						
-						
+						</div>	
 					</div>
 				</div>
 			</div>
