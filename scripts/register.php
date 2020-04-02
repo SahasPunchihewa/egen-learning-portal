@@ -31,7 +31,7 @@ if($error_count==0){
     $ch = curl_init();
 
     $headers = array(
-        'Authorization: Bearer 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',
+        'Authorization:'.$key,
         'Content-Type: application/json'
     );
 
