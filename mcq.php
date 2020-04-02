@@ -52,7 +52,7 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text"><img src="images/icon.png"/>&ensp;FOR NEXT GENERATION</div>
+									<div class="logo_text"><img src="images/icon.png"/>&ensp;INSTITUTE OF ICT</div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
