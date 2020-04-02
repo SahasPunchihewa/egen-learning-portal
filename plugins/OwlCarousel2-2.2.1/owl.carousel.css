@@ -19,7 +19,7 @@
 .owl-carousel .owl-stage
 {
     position: relative;
-    -ms-touch-action: pan-Y;
+   
     width: 100%;
     height: 100%;
     -moz-backface-visibility: hidden;

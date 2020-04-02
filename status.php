@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Staff Login</title>
+<title>Unicat</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/contact.css">
-<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles_status.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
 <body>
 
 <div class="super_container">
-
-	<!-- Header -->
 
 	<header class="header">
 			
@@ -59,8 +60,17 @@
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
 									<li><a href="downloads.php">Downloads</a></li>
-									<li class="active"><a href="login.php">Staff Login</a></li>
+									<li><a href="login.php">Staff Login</a></li>
+									<li class="active"><a href="status.php">Status</a></li>
 								</ul>
+								
+
+								<!-- Hamburger -->
+
+								
+								<div class="hamburger menu_mm">
+									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+								</div>
 							</nav>
 
 						</div>
@@ -68,26 +78,19 @@
 				</div>
 			</div>
 		</div>
-
+	
 	</header>
 
 	<!-- Menu -->
 
 	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
 		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
-		<div class="search">
-			<form action="#" class="header_search_form menu_mm">
-				<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
-				<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
-					<i class="fa fa-search menu_mm" aria-hidden="true"></i>
-				</button>
-			</form>
-		</div>
 		<nav class="menu_nav">
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.php">Home</a></li>
-				<li class="menu_mm"><a href="downloads.php">Home</a></li>
+				<li class="menu_mm"><a href="downloads.php">Downloads</a></li>
 				<li class="menu_mm"><a href="login.php">Staff Login</a></li>
+				<li class="menu_mm"><a href="#">Staff Portal</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -101,8 +104,9 @@
 					<div class="col">
 						<div class="breadcrumbs">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li>Login</li>
+								<li><a href="index.php">Home</a></li>
+								<li><a href="login.php">Staff Login</a></li>
+								<li>Staff Portal</li>
 							</ul>
 						</div>
 					</div>
@@ -111,39 +115,48 @@
 		</div>			
 	</div>
 
-	<!-- Contact -->
+	<!-- Features -->
 
-	<div class="contact">
-
-		<!-- Contact Info -->
-
-		<div class="contact_info_container">
-			<div class="container">
-				<div class="row">
-
-					<!-- Contact Form -->
-					<div class="col-lg-6">
-						<div class="contact_form">
-							<div class="contact_info_title">Login</div>
-							<form action="#" class="comment_form">
-								<div>
-									<div class="form_title">Username</div>
-									<input type="text" class="comment_input" required="required">
+	<div class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<h2 class="section_title">
+							<?php
+							include("db.php");
+							$sql = "DELETE FROM document WHERE documentId=".$_GET['id'];
+							if ($conn->query($sql) === TRUE) 
+							{
+								$msg = "You Have Successfully Deleted This Document.";
+							}
+							else 
+							{
+								$msg = "Oops! Some thing went wrong";
+							}
+							?>
+						</h2>
+						<div class="about">
+							<div class="container">
+								<div class="row">
+									<div class="col">
+										<div class="section_title_container text-center">
+											<h2 class="section_title"><?php echo($msg)?></h2>
+											<div class="section_subtitle"><p>Click <a href=<?php echo("download.php?grade=".$_GET['grade']) ?>>here</a> to proceed to file upload portal</p>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div>
-									<div class="form_title">Password</div>
-									<input type="password" class="comment_input" required="required">
-								</div>
-								<div>
-									<button type="submit" class="comment_button trans_200">Login</button>
-								</div>
-							</form>
+     						</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	
+
 	<!-- Footer -->
 
 	<footer class="footer">
@@ -155,8 +168,7 @@
 						<div class="row">
 
 							<div class="col-lg-3 footer_col">
-					
-								<!-- Footer About -->
+					<!-- Footer About -->
 								<div class="footer_section footer_about">
 									<div class="footer_logo_container">
 										<a href="#">
@@ -177,10 +189,14 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-<script src="plugins/marker_with_label/marker_with_label.js"></script>
-<script src="js/contact.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
