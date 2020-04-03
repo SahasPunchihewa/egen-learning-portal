@@ -59,7 +59,7 @@
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
 									<li><a href="downloads.php">Downloads</a></li>
-									<li class="active"><a href="login.php">Staff Login</a></li>
+									<li class="active"><a href="login.php">Login</a></li>
 								</ul>
 							</nav>
 
@@ -125,14 +125,19 @@
 					<div class="col-lg-6">
 						<div class="contact_form">
 							<div class="contact_info_title">Login</div>
-							<form action="#" class="comment_form">
+							<?php
+								if (isset($_GET['fail'])){
+									echo("<p style='color: red;'>Invalid Username or Password</p>");
+								}												
+							?>
+							<form action="scripts/login.php" class="comment_form" method="POST">
 								<div>
 									<div class="form_title">Username</div>
-									<input type="text" class="comment_input" required="required">
+									<input type="text" class="comment_input" required="required" name="userMail">
 								</div>
 								<div>
 									<div class="form_title">Password</div>
-									<input type="password" class="comment_input" required="required">
+									<input type="password" class="comment_input" required="required" name="userPassword">
 								</div>
 								<div>
 									<button type="submit" class="comment_button trans_200">Login</button>

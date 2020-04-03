@@ -1,3 +1,8 @@
+<?php
+	session_start();
+	if (isset($_SESSION['userName'])){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,11 +38,11 @@
 									<li><div class="question">Have any questions?</div></li>
 									<li>
 										<i class="fa fa-phone" aria-hidden="true"></i>
-										<div>+94 77 901 6551</div>
+										<div>+94 777 342 065</div>
 									</li>
 									<li>
 										<i class="fa fa-envelope-o" aria-hidden="true"></i>
-										<div>info.deercreative@gmail.com</div>
+										<div>prasannagalle@gmail.com</div>
 									</li>
 								</ul>
 							</div>
@@ -61,7 +66,7 @@
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li class="active"><a href="#">Home</a></li>
-									<li><a href="login.php">Staff Login</a></li>
+									<li><a href="scripts/logout.php">Logout</a></li>
 								</ul>
 							</nav>
 
@@ -105,7 +110,7 @@
 		<nav class="menu_nav">
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.html">Home</a></li>
-				<li class="menu_mm"><a href="login.php">Staff Login</a></li>
+				<li class="menu_mm"><a href="login.php">Logout</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -134,10 +139,9 @@
 													<option>2020 A/L Theory</option>
 													<option>2021 A/L Theory</option>
 													<option>2022 A/L Theory</option>
-													<option>2020 A/L Revition</option>
 												</select>
 											</div>
-											<button type="submit" class="home_search_button">Submit</button>
+											<button type="submit" class="home_search_button">SEARCH</button>
 										</form>
 									</div>
 								</div>
@@ -193,3 +197,8 @@
 <script src="js/custom.js"></script>
 </body>
 </html>
+<?php
+	}else{
+		header("Location:"."login.php");
+	}
+?>
