@@ -1,22 +1,22 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Upload</title>
+<title>Unicat</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/contact.css">
-<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<link rel="stylesheet" type="text/css" href="../styles/bootstrap4/bootstrap.min.css">
+<link href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="../styles/main_styles_status.css">
+<link rel="stylesheet" type="text/css" href="../styles/responsive.css">
 </head>
 <body>
 
 <div class="super_container">
-
-	<!-- Header -->
 
 	<header class="header">
 			
@@ -31,11 +31,11 @@
 									<li><div class="question">Have any questions?</div></li>
 									<li>
 										<i class="fa fa-phone" aria-hidden="true"></i>
-										<div>+94 777 342 065</div>
+										<div>+94 77 901 6551</div>
 									</li>
 									<li>
 										<i class="fa fa-envelope-o" aria-hidden="true"></i>
-										<div>prasannagalle@gmail.com</div>
+										<div>info.deercreative@gmail.com</div>
 									</li>
 								</ul>
 							</div>
@@ -53,13 +53,15 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text"><img src="images/icon.png"/></div>
+									<div class="logo_text"><img src="../images/icon.png"/>&ensp;INSTITUTE OF ICT</div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
-									<li class="active"><a href="portal.php">Staff Portal</a></li>
+									<li><a href="downloads.php">Downloads</a></li>
+									<li><a href="login.php">Staff Login</a></li>
+									<li class="active"><a href="status.php">Status</a></li>
 								</ul>
 								
 
@@ -87,6 +89,7 @@
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.php">Home</a></li>
 				<li class="menu_mm"><a href="downloads.php">Downloads</a></li>
+				<li class="menu_mm"><a href="login.php">Staff Login</a></li>
 				<li class="menu_mm"><a href="#">Staff Portal</a></li>
 			</ul>
 		</nav>
@@ -102,6 +105,7 @@
 						<div class="breadcrumbs">
 							<ul>
 								<li><a href="index.php">Home</a></li>
+								<li><a href="login.php">Staff Login</a></li>
 								<li>Staff Portal</li>
 							</ul>
 						</div>
@@ -111,72 +115,48 @@
 		</div>			
 	</div>
 
-	<!-- Contact -->
+	<!-- Features -->
 
-	<div class="contact">
-		
-
-		<!-- Contact Info -->
-
-		<div class="contact_info_container">
-			<div class="container">
-				<div class="row">
-
-					<!-- Contact Form -->
-					<div class="col-lg-6">
-						<div class="contact_form">
-							<div class="contact_info_title">File Upload Portal</div>
+	<div class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<h2 class="section_title">
 							<?php
-								if (isset($_GET['fail'])){
-									echo("<p style='color: red;'>Can't Upload file. File type must be pdf</p>");
-								}												
+							include("db.php");
+							$sql = "DELETE FROM document WHERE documentId=".$_GET['id'];
+							if ($conn->query($sql) === TRUE) 
+							{
+								$msg = "Removed the file successfully.";
+							}
+							else 
+							{
+								$msg = "Oops! Something went wrong";
+							}
 							?>
-							<form action="scripts/portal.php" class="comment_form" method="POST" enctype = "multipart/form-data">
-								<div>
-									<div class="form_title">Select Class</div>
-									<select id="courses_search_select" class="courses_search_select courses_search_input" name="grade" required>
-										<option value="">Select Class</option>
-										<option value="2020">2020 A/L</option>
-										<option value="2021">2021 A/L</option>
-										<option value="2022">2022 A/L</option>
-									</select>
+						</h2>
+						<div class="about">
+							<div class="container">
+								<div class="row">
+									<div class="col">
+										<div class="section_title_container text-center">
+											<h2 class="section_title"><?php echo($msg)?></h2>
+											<div class="section_subtitle"><p>Click <a href=<?php echo("download.php?grade=".$_GET['grade']) ?>>here</a> to proceed to file upload portal</p>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="form_title">File Type</div>
-								  <p>
-									  <label>
-									    <input type="radio" name="filetype" value="vid" id="filetype_0" required>
-										  Video&emsp;</label>
-									  <label>
-									    <input type="radio" name="filetype" value="tute" id="filetype_1">
-									    MCQ/Structure&emsp;</label>
-									  <label>
-									    <input type="radio" name="filetype" value="paper" id="filetype_2">
-									    E Material(PDF)</label>
-								  </p>
-                                </div>
-								<div>
-									<div class="form_title">Title</div>
-									<input type="text" class="comment_input" required="required" name="title">
-								</div>
-								<div>
-									<div class="form_title">Submission Link / Video Link</div>
-									<input type="text" class="comment_input" name="link">
-								</div>
-								<div>
-								<div>
-									<div class="form_title">Attach File</div>
-									<input type="file" name="document" accept=".pdf">
-								</div>
-								<div>
-									<button type="submit" class="comment_button trans_200">submit now</button>
-								</div>
-							</form>
+     						</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	
+
 	<!-- Footer -->
 
 	<footer class="footer">
@@ -205,14 +185,18 @@
 		</div>
 	</footer>
 </div>
-	
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-<script src="plugins/marker_with_label/marker_with_label.js"></script>
-<script src="js/contact.js"></script>
+
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../styles/bootstrap4/popper.js"></script>
+<script src="../styles/bootstrap4/bootstrap.min.js"></script>
+<script src="../plugins/greensock/TweenMax.min.js"></script>
+<script src="../plugins/greensock/TimelineMax.min.js"></script>
+<script src="../plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="../plugins/greensock/animation.gsap.min.js"></script>
+<script src="../plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="../plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="../plugins/easing/easing.js"></script>
+<script src="../plugins/parallax-js-master/parallax.min.js"></script>
+<script src="../js/custom.js"></script>
 </body>
 </html>

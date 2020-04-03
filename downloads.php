@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -169,6 +170,15 @@
 						<div class="courses_button trans_200">
 								<a href="uploads/<?php echo($row['docId']) ?>.pdf" target="_blank">Download</a>
 							</div>
+							<?php
+							if($_SESSION['userType'] == "admin"){
+								?>
+								<div class="courses_button trans_200">
+								<a href="scripts/delete.php?id=<?php echo($row['docId']) ?>.pdf" target="_blank">Delete</a>
+							</div>
+								<?php
+							}
+							?>
 
 						<?php
 
@@ -178,14 +188,34 @@
 								<a href="<?php echo($row['docLink']) ?>"  target="_blank">Watch</a>
 							</div>
 								<?php
+							if($_SESSION['userType'] == "admin"){
+								?>
+								<div class="courses_button trans_200">
+								<a href="scripts/delete.php?id=<?php echo($row['docId']) ?>.pdf" target="_blank">Delete</a>
+							</div>
+								<?php
+							}
+							?>
+							
+								<?php
 							}else {
 								?>
 								<div class="courses_button trans_200">
 								<a href="uploads/<?php echo($row['docId']) ?>.pdf" target="_blank">Download</a>
 							</div>
+							
 							<div class="courses_button trans_200">
 								<a href="<?php echo($row['docLink']) ?>.pdf"  target="_blank">Submit Answer</a>
 							</div>
+								<?php
+							if($_SESSION['userType'] == "admin"){
+								?>
+								<div class="courses_button trans_200">
+								<a href="scripts/delete.php?id=<?php echo($row['docId']) ?>.pdf" target="_blank">Delete</a>
+							</div>
+								<?php
+							}
+							?>
 								<?php
 							}
 						?> 
