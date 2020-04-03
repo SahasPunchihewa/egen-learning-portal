@@ -63,7 +63,7 @@
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
 									<li class="active"><a href="downloads.php">Downloads</a></li>
-									<li><a href="login.php">Staff Login</a></li>
+									<li><a href="scripts/logout.php">Logout</a></li>
 								</ul>
 							</nav>
 
@@ -90,7 +90,7 @@
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.html">Home</a></li>
 				<li class="menu_mm"><a href="downloads.php">Downloads</a></li>
-				<li class="menu_mm"><a href="login.php">Staff Login</a></li>
+				<li class="menu_mm"><a href="scripts/logout.php">Logout</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -133,31 +133,76 @@
 							<button action="submit" class="courses_search_button ml-auto">Submit</button>
 						</form>
 					</div>
-					<div class="courses_container">
-						<div class="row courses_row">
-							
-							<!-- Course -->
-							<div class="col-lg-6 course_col">
-								<div class="course">
-									<div class="course_image"><img src="images/course_4.jpg" alt=""></div>
-									<div class="course_body">
-										<h3 class="course_title">Software Training</h3>
-										<div class="courses_button trans_200">
-										<a href="">Download</a>
-									</div>
-									<div class="courses_button trans_200">
-										<a href="mcq.php">Answer</a>
-									</div>
-									<div class="courses_button trans_200">
-										<a href="">Delete</a>
-									</div>
-									</div>
-									
-								</div>
+				</div>
+				
+	<div class="courses">
+		<div class="section_background parallax-window" data-parallax="scroll" data-image-src="images/courses_background.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row courses_row">
+				<!-- Course Start Here -->
+
+				<?php
+						include("scripts/db.php");
+
+						$sql = "SELECT * FROM doc WHERE docGrade=".$_GET['grade'];
+
+						$result = $conn->query($sql);
+
+						if ($result->num_rows > 0) {
+							// output data of each row
+							while($row = $result->fetch_assoc()) {
+			?>
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+                <div class="course_body">
+					<h3 class="course_title"><?php echo($row['docTitle']) ?></h3>
+					<div class="course_text">
+								<p>Date: <?php echo($row['docDate']) ?></p>
+					</div>
+					<div class="course_footer">
+					<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+					<div class="col">
+						<?php
+							if($row['docType'] == 'paper'){
+						?>
+						<div class="courses_button trans_200">
+								<a href="uploads/<?php echo($row['docId']) ?>.pdf" target="_blank">Download</a>
 							</div>
-						</div>	
+
+						<?php
+
+							}elseif ($row['docType'] == 'vid') {
+								?>
+								<div class="courses_button trans_200">
+								<a href="<?php echo($row['docLink']) ?>"  target="_blank">Watch</a>
+							</div>
+								<?php
+							}else {
+								?>
+								<div class="courses_button trans_200">
+								<a href="uploads/<?php echo($row['docId']) ?>.pdf" target="_blank">Download</a>
+							</div>
+							<div class="courses_button trans_200">
+								<a href="<?php echo($row['docLink']) ?>.pdf"  target="_blank">Submit Answer</a>
+							</div>
+								<?php
+							}
+						?> 
+				</div>
+					</div>	
+				</div>
+                </div>
 					</div>
 				</div>
+				<!-- Course Start Here  -->
+				<?php
+							}
+						}
+				?>
+			</div>
+		</div>
+	</div>
 			</div>
 		</div>
 	</div>
