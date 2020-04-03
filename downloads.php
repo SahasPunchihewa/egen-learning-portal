@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php
+	session_start();
+	if (isset($_SESSION['userName'])){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,11 +39,11 @@
 									<li><div class="question">Have any questions?</div></li>
 									<li>
 										<i class="fa fa-phone" aria-hidden="true"></i>
-										<div>+94 77 901 6551</div>
+										<div>+94 777 342 065</div>
 									</li>
 									<li>
 										<i class="fa fa-envelope-o" aria-hidden="true"></i>
-										<div>info.deercreative@gmail.com</div>
+										<div>prasannagalle@gmail.com</div>
 									</li>
 								</ul>
 							</div>
@@ -57,13 +61,16 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text"><img src="images/icon.png"/>&ensp;INSTITUTE OF ICT</div>
+									<div class="logo_text"><img src="images/icon.png"/></div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
 									<li class="active"><a href="downloads.php">Downloads</a></li>
+									<?php if($_SESSION['userType'] == 'admin'){?>   
+										<li><a href="portal.php">Portal</a></li>    
+										<?php } ?>
 									<li><a href="scripts/logout.php">Logout</a></li>
 								</ul>
 							</nav>
@@ -278,3 +285,8 @@
 <script src="js/courses.js"></script>
 </body>
 </html>
+<?php
+	}else{
+		header("Location:"."login.php");
+	}
+?>

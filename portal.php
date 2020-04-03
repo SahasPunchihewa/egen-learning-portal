@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php
+	session_start();
+	if ($_SESSION['userType'] == "admin"){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,6 +63,7 @@
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
+									<li><a href="register.php">Register New Student</a></li> 
 									<li class="active"><a href="portal.php">Staff Portal</a></li>
 								</ul>
 								
@@ -216,3 +221,8 @@
 <script src="js/contact.js"></script>
 </body>
 </html>
+<?php
+	}else{
+		header("Location:"."login.php");
+	}
+?>

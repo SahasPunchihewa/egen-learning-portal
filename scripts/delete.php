@@ -31,11 +31,11 @@
 									<li><div class="question">Have any questions?</div></li>
 									<li>
 										<i class="fa fa-phone" aria-hidden="true"></i>
-										<div>+94 77 901 6551</div>
+										<div>+94 777 342 065</div>
 									</li>
 									<li>
 										<i class="fa fa-envelope-o" aria-hidden="true"></i>
-										<div>info.deercreative@gmail.com</div>
+										<div>prasannagalle@gmail.com</div>
 									</li>
 								</ul>
 							</div>
@@ -53,15 +53,13 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text"><img src="../images/icon.png"/>&ensp;INSTITUTE OF ICT</div>
+									<div class="logo_text"><img src="../images/icon.png"/></div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
-									<li><a href="index.php">Home</a></li>
-									<li><a href="downloads.php">Downloads</a></li>
-									<li><a href="login.php">Staff Login</a></li>
-									<li class="active"><a href="status.php">Status</a></li>
+									<li><a href="../index.php">Home</a></li>
+									<li class="active"><a href="../portal.php">Staff Portal</a></li>
 								</ul>
 								
 
@@ -142,7 +140,7 @@
 									<div class="col">
 										<div class="section_title_container text-center">
 											<h2 class="section_title"><?php echo($msg)?></h2>
-											<div class="section_subtitle"><p>Click <a href=<?php echo("download.php?grade=".$_GET['grade']) ?>>here</a> to proceed to file upload portal</p>
+											<div class="section_subtitle"><p>Click <a href="../portal.php">here</a> to proceed to file upload portal</p>
 											</div>
 										</div>
 									</div>

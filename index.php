@@ -60,12 +60,16 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text"><img src="images/icon.png"/>&ensp;INSTITUTE OF ICT</div>
+									<div class="logo_text"><img src="images/icon.png"/></div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li class="active"><a href="#">Home</a></li>
+									<?php if($_SESSION['userType'] == 'admin'){?>   
+										<li><a href="portal.php">Portal</a></li>
+										<li><a href="register.php">Register New Student</a></li>    
+										<?php } ?>
 									<li><a href="scripts/logout.php">Logout</a></li>
 								</ul>
 							</nav>
@@ -133,12 +137,12 @@
 									<div class="home_slider_title">Welcome To <span>EGEN</span> Learning System</div>
 									<div class="home_slider_subtitle">Future Of Education Technology</div>
 									<div class="home_slider_form_container">
-										<form action="#" id="home_search_form_1" class="home_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between">
+										<form action="downloads.php" id="home_search_form_1" class="home_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between">
 											<div class="d-flex flex-row align-items-center justify-content-start">
-												<select class="dropdown_item_select home_search_input">
-													<option>2020 A/L Theory</option>
-													<option>2021 A/L Theory</option>
-													<option>2022 A/L Theory</option>
+												<select class="dropdown_item_select home_search_input" name="grade">
+													<option value="2020">2020 A/L Theory</option>
+													<option value="2021">2021 A/L Theory</option>
+													<option value="2022">2022 A/L Theory</option>
 												</select>
 											</div>
 											<button type="submit" class="home_search_button">SEARCH</button>
