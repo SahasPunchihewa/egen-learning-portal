@@ -212,7 +212,7 @@
 							</div>
 							
 							<div class="courses_button trans_200">
-								<a href="<?php echo($row['docLink']) ?>.pdf"  target="_blank">Submit Answer</a>
+								<a href="<?php echo($row['docLink']) ?>"  target="_blank">Submit Answer</a>
 							</div>
 								<?php
 							if($_SESSION['userType'] == "admin"){

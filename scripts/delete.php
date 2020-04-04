@@ -123,7 +123,7 @@
 						<h2 class="section_title">
 							<?php
 							include("db.php");
-							$sql = "DELETE FROM document WHERE documentId=".$_GET['id'];
+							$sql = "DELETE FROM doc WHERE docId=".$_GET['id'];
 							if ($conn->query($sql) === TRUE) 
 							{
 								$msg = "Removed the file successfully.";
