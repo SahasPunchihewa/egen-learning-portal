@@ -1267,3 +1267,16 @@ section
 {
 	color: #003588;
 }
+
+.table
+{
+	column-span:5px;
+}
+.slist
+{
+	width:100%;
+}
+.upl
+{
+	vertical-align: middle;
+}
