@@ -133,7 +133,7 @@
 										<tr>
 											<td><img src="images/profilepic.png" width="200" height="200" alt="Profile Picture"/></td>
 											<td>&nbsp;</td>
-											<td class="upl"><button type="submit" class="comment_button trans_200">Upload</button></td>
+											<td class="upl"><br><br><br><button type="submit" class="comment_button trans_200">Upload</button></td>
 										</tr>
 										<tr>
 											<td>Username</td>

@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Upload</title>
+<title>Staff Portal</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
@@ -63,7 +63,7 @@
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
-									<li><a href="register.php">Register New Student</a></li> 
+									<li><a href="register.php">Student Registration</a></li> 
 									<li class="active"><a href="portal.php">Staff Portal</a></li>
 								</ul>
 								
@@ -91,7 +91,7 @@
 		<nav class="menu_nav">
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.php">Home</a></li>
-				<li class="menu_mm"><a href="downloads.php">Downloads</a></li>
+				<li class="menu_mm"><a href="register.php">Student Registration</a></li>
 				<li class="menu_mm"><a href="#">Staff Portal</a></li>
 			</ul>
 		</nav>

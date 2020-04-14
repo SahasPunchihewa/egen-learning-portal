@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Staff Login</title>
+<title>Login</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
@@ -57,6 +57,7 @@
 							</div>
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
+									<li><a href="index.php">Home</a></li>
 									<li class="active"><a href="login.php">Login</a></li>
 								</ul>
 							</nav>
@@ -83,7 +84,8 @@
 		</div>
 		<nav class="menu_nav">
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="login.php">Staff Login</a></li>
+				<li class="menu_mm"><a href="login.php">Home</a></li>
+				<li class="menu_mm"><a href="login.php">Login</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -97,6 +99,7 @@
 					<div class="col">
 						<div class="breadcrumbs">
 							<ul>
+								<li><a href="index.php">Home</a></li>
 								<li>Login</li>
 							</ul>
 						</div>
@@ -138,6 +141,8 @@
 									<button type="submit" class="comment_button trans_200">Login</button>
 								</div>
 							</form>
+							<br><br>
+							<div class="form_title">Don't You Have an Account? <a href="register.php">Register Here</a></div>
 						</div>
 					</div>
 				</div>
