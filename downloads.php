@@ -69,8 +69,9 @@
 									<li><a href="index.php">Home</a></li>
 									<li class="active"><a href="downloads.php">Downloads</a></li>
 									<?php if($_SESSION['userType'] == 'admin'){?>   
-										<li><a href="portal.php">Portal</a></li>    
+										<li><a href="portal.php">Staff Portal</a></li>    
 										<?php } ?>
+									<li><a href="profile.php">Profile</a></li>
 									<li><a href="scripts/logout.php">Logout</a></li>
 								</ul>
 							</nav>
@@ -98,6 +99,7 @@
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.html">Home</a></li>
 				<li class="menu_mm"><a href="downloads.php">Downloads</a></li>
+				<li class="menu_mm"><a href="profile.php">Profile</a></li>
 				<li class="menu_mm"><a href="scripts/logout.php">Logout</a></li>
 			</ul>
 		</nav>

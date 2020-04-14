@@ -66,7 +66,7 @@
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
 									<li><a href="portal.php">Staff Portal</a></li>
-									<li class="active"><a href="#">Registration Portal</a></li>
+									<li class="active"><a href="#">Student Registration</a></li>
 								</ul>
 								
 
@@ -93,9 +93,8 @@
 		<nav class="menu_nav">
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.php">Home</a></li>
-				<li class="menu_mm"><a href="downloads.php">Downloads</a></li>
-				<li class="menu_mm"><a href="login.php">Staff Login</a></li>
-				<li class="menu_mm"><a href="#">Staff Portal</a></li>
+				<li class="menu_mm"><a href="portal.php">Staff Portal</a></li>
+				<li class="menu_mm"><a href="#">Student Registration</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -110,7 +109,7 @@
 						<div class="breadcrumbs">
 							<ul>
 								<li><a href="index.php">Home</a></li>
-								<li>Staff Portal</li>
+								<li>Student Registration</li>
 							</ul>
 						</div>
 					</div>
@@ -157,7 +156,6 @@
 									<div class="form_title">Student Mail</div>
 									<input type="email" class="comment_input" required="required" name="sMail">
 								</div>
-								<div>
 								<div>
 									<button type="submit" class="comment_button trans_200">submit now</button>
 								</div>

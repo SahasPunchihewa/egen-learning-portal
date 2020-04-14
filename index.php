@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Egen - Home</title>
+<title>Home</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
@@ -67,9 +67,10 @@
 								<ul class="main_nav">
 									<li class="active"><a href="#">Home</a></li>
 									<?php if($_SESSION['userType'] == 'admin'){?>   
-										<li><a href="portal.php">Portal</a></li>
-										<li><a href="register.php">Register New Student</a></li>    
+										<li><a href="portal.php">Staff Portal</a></li>
+										<li><a href="register.php">Student Registration</a></li>    
 										<?php } ?>
+									<li><a href="profile.php">Profile</a></li>
 									<li><a href="scripts/logout.php">Logout</a></li>
 								</ul>
 							</nav>
@@ -114,6 +115,11 @@
 		<nav class="menu_nav">
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.html">Home</a></li>
+				<?php if($_SESSION['userType'] == 'admin'){?>   
+				<li class="menu_mm"><a href="portal.php">Staff Portal</a></li>
+				<li class="menu_mm"><a href="register.php">Student Registration</a></li>    
+										<?php } ?>
+				<li class="menu_mm"><a href="profile.php">Profile</a></li>
 				<li class="menu_mm"><a href="login.php">Logout</a></li>
 			</ul>
 		</nav>

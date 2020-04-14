@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Unicat</title>
+<title>Status</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
@@ -53,14 +53,14 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text"><img src="images/icon.png"/>&ensp;INSTITUTE OF ICT</div>
+									<div class="logo_text"><img src="images/icon.png"/></div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
 									<li><a href="downloads.php">Downloads</a></li>
-									<li><a href="login.php">Staff Login</a></li>
+									<li><a href="login.php">Login</a></li>
 									<li class="active"><a href="status.php">Status</a></li>
 								</ul>
 								
@@ -89,8 +89,8 @@
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.php">Home</a></li>
 				<li class="menu_mm"><a href="downloads.php">Downloads</a></li>
-				<li class="menu_mm"><a href="login.php">Staff Login</a></li>
-				<li class="menu_mm"><a href="#">Staff Portal</a></li>
+				<li class="menu_mm"><a href="login.php">Login</a></li>
+				<li class="menu_mm"><a href="#">Status</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -105,8 +105,8 @@
 						<div class="breadcrumbs">
 							<ul>
 								<li><a href="index.php">Home</a></li>
-								<li><a href="login.php">Staff Login</a></li>
-								<li>Staff Portal</li>
+								<li><a href="login.php">Login</a></li>
+								<li>Status</li>
 							</ul>
 						</div>
 					</div>
